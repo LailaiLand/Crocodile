@@ -4,6 +4,7 @@ let answer = ''
 let buttons = `<button onclick="doStuff('s')"> <img src="img/start.png"/> </button>`
 let number1 = 0;
 let number2 = 0;
+let sound = document.getElementById('music')
 
 //view
 showContent();
@@ -24,7 +25,7 @@ function showContent() {
 
 
 function playAudio(){
-    document.getElementById('music').innerHTML = '<audio loop autoplay src="sound/sharky.wav"></audio>';
+    sound.innerHTML = '<audio loop autoplay src="sound/sharky.wav"></audio>';
 
 }
 //controller
@@ -52,7 +53,10 @@ function doStuff(playerInput) {
     else {
         points--;
         answer = 'Feil!';
+        buttons = `<button onclick="doStuff('s')"> <img src="img/start.png"/> </button>`
+        sound.innerHTML = '<audio autoplay src="sound/feil.wav"></audio>'
     }
+
     number1 = Math.floor((Math.random() * 10) + 1)
     number2 = Math.floor((Math.random() * 10) + 1)
 
