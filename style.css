@@ -1,0 +1,38 @@
+body {
+    background-color: #1E4A95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interzone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.num {
+    background-color: cyan;
+    padding: 5px;
+
+}
+
+.but {
+    margin: 5px;
+}
+
+.answ {
+    text-align: center;
+    color: rgb(20, 169, 255);
+    padding: 5px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
